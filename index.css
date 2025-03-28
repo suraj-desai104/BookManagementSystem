@@ -1,0 +1,83 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove unwanted centering */
+body {
+  margin: 0;
+  padding: 0;
+  display: block; /* Fix layout issue */
+  width: 100%;
+}
+
+/* Full-width Navbar Fix */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  background-color: #007bff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure navbar items align properly */
+.navbar .navbar-nav {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* Fix link styling */
+a {
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffcc00; /* Yellow on hover */
+}
+
+/* Fix button styles */
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #646cff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
